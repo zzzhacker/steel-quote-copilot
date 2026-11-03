@@ -1,0 +1,179 @@
+{
+ "_note": "assumed_aliases map vague trade names to a grade; normalize_line flags them as assumptions.",
+ "assumed_aliases": {
+  "mild steel": "A36",
+  "carbon steel": "A36"
+ },
+ "grades": {
+  "304": {
+   "uns": "S30400",
+   "family": "stainless",
+   "density": 0.289,
+   "aliases": [
+    "S30400",
+    "UNS S30400",
+    "18-8",
+    "18/8",
+    "1.4301",
+    "SS304",
+    "304 SS",
+    "Type 304",
+    "AISI 304",
+    "T304",
+    "304 stainless"
+   ]
+  },
+  "304L": {
+   "uns": "S30403",
+   "family": "stainless",
+   "density": 0.289,
+   "aliases": [
+    "S30403",
+    "UNS S30403",
+    "1.4307",
+    "SS304L",
+    "304L SS",
+    "Type 304L",
+    "AISI 304L",
+    "304 low carbon"
+   ]
+  },
+  "316": {
+   "uns": "S31600",
+   "family": "stainless",
+   "density": 0.289,
+   "aliases": [
+    "S31600",
+    "UNS S31600",
+    "1.4401",
+    "SS316",
+    "316 SS",
+    "Type 316",
+    "AISI 316",
+    "T316",
+    "316 stainless"
+   ]
+  },
+  "316L": {
+   "uns": "S31603",
+   "family": "stainless",
+   "density": 0.289,
+   "aliases": [
+    "S31603",
+    "UNS S31603",
+    "1.4404",
+    "SS316L",
+    "316L SS",
+    "Type 316L",
+    "AISI 316L",
+    "316L stainless"
+   ]
+  },
+  "430": {
+   "uns": "S43000",
+   "family": "stainless",
+   "density": 0.28,
+   "aliases": [
+    "S43000",
+    "UNS S43000",
+    "1.4016",
+    "SS430",
+    "430 SS",
+    "Type 430",
+    "AISI 430"
+   ]
+  },
+  "2205": {
+   "uns": "S32205",
+   "family": "stainless",
+   "density": 0.285,
+   "aliases": [
+    "S32205",
+    "S31803",
+    "UNS S32205",
+    "1.4462",
+    "SS2205",
+    "2205 duplex",
+    "duplex 2205",
+    "duplex"
+   ]
+  },
+  "A36": {
+   "uns": "K02600",
+   "family": "carbon",
+   "density": 0.2836,
+   "aliases": [
+    "A-36",
+    "ASTM A36",
+    "ASTM A-36",
+    "K02600",
+    "A36 steel"
+   ]
+  },
+  "A572-50": {
+   "uns": null,
+   "family": "carbon",
+   "density": 0.2836,
+   "aliases": [
+    "A572",
+    "A572 Gr 50",
+    "A572 Grade 50",
+    "ASTM A572 Gr 50",
+    "A572-50"
+   ]
+  },
+  "1018": {
+   "uns": "G10180",
+   "family": "carbon",
+   "density": 0.2836,
+   "aliases": [
+    "G10180",
+    "AISI 1018",
+    "SAE 1018",
+    "C1018",
+    "1018 CRS",
+    "cold rolled 1018"
+   ]
+  },
+  "4140": {
+   "uns": "G41400",
+   "family": "alloy",
+   "density": 0.2836,
+   "aliases": [
+    "G41400",
+    "AISI 4140",
+    "SAE 4140",
+    "4140 alloy",
+    "42CrMo4",
+    "1.7225"
+   ]
+  },
+  "6061": {
+   "uns": "A96061",
+   "family": "aluminum",
+   "density": 0.0975,
+   "aliases": [
+    "A96061",
+    "UNS A96061",
+    "6061-T6",
+    "6061-T651",
+    "6061 T6",
+    "6061 aluminum",
+    "AA6061"
+   ]
+  },
+  "5052": {
+   "uns": "A95052",
+   "family": "aluminum",
+   "density": 0.0965,
+   "aliases": [
+    "A95052",
+    "UNS A95052",
+    "5052-H32",
+    "5052 H32",
+    "5052 aluminum",
+    "AA5052"
+   ]
+  }
+ }
+}

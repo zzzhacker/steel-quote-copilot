@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# private notes
+interview prep.md
+erp-data-plan.md
+.claude/
+*.egg-info/
+.pytest_cache/

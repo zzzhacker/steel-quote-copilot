@@ -1,0 +1,11 @@
+{
+ "_source": "https://www.clevelandcliffs.com/_assets/_d252115d58f161704147775f45c8cf6d/clevelandcliffs/db/1185/12010/description/CLF_SurchargeTable_Stainless_092026.pdf",
+ "_period": "Shipments Aug 30 - Oct 3, 2026; $/lb, material >= 0.015 in",
+ "_note": "Alloy surcharge applies to stainless only; carbon, alloy steel and aluminum have no alloy surcharge here.",
+ "304": 0.9427,
+ "304L": 0.9427,
+ "316": 1.7594,
+ "316L": 1.7594,
+ "430": 0.3828,
+ "2205": 1.9115
+}

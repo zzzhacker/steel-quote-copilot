@@ -1,0 +1,50 @@
+{
+ "_note": "illustrative service-center pricing structure; surcharge values real",
+ "base_cwt": {
+  "304": 98,
+  "304L": 100,
+  "316": 105,
+  "316L": 108,
+  "430": 95,
+  "2205": 110,
+  "A36": 63,
+  "A572-50": 68,
+  "1018": 70,
+  "4140": 85,
+  "6061": 210,
+  "5052": 190
+ },
+ "thickness_extra_cwt": [
+  {
+   "lt_in": 0.0625,
+   "extra": 12
+  },
+  {
+   "lt_in": 0.1875,
+   "extra": 5
+  },
+  {
+   "lt_in": 1.0,
+   "extra": 0
+  },
+  {
+   "lt_in": null,
+   "extra": 4
+  }
+ ],
+ "size_extra_cwt": {
+  "over_in": 144,
+  "extra": 5
+ },
+ "cut_charge": {
+  "saw": 8,
+  "shear": 5
+ },
+ "cert_fee": 25,
+ "remnant_discount": 0.1,
+ "tier_discount": {
+  "A": 0.08,
+  "B": 0.04,
+  "C": 0.0
+ }
+}

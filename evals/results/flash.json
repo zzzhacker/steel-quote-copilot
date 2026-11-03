@@ -1,0 +1,602 @@
+[
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleAPIError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
+  "latency_s": 90.00515057900338,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleAPIError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
+  "latency_s": 112.62409061200015,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+  "latency_s": 113.58541677600442,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleAPIError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+  "latency_s": 124.55611636299727,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 11.022708769996825,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 53.71300864999648,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 9.859016613998392,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 16.655050807996304,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 27.833789361000527,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 31.587324396998156,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 14.622774328003288,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 15.077467253999203,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 15.029773367998132,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 115.97449095299817,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 4.2744321589998435,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 15.154299595997145,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 57.69692065999698,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 0.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 14.24575889800326,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 19.056267713000125,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 29.74226209000335,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 30.4049697570008,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 31.267190990998643,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 30.020525726002234,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 30.3648134929972,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 29.32772108399513,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 29.658812629997556,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 31.815921772002184,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 29.75694312000269,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 29.164123870003095,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 30.696798154000135,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 29.41215487899899,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 29.705204862002574,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 30.53402439400088,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 29.850580660997366,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 30.065471000998514,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 30.395064862001163,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 30.396109692999744,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 29.873462830997596,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 30.5362785469988,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [],
+   "total": 0.0
+  },
+  "error": "GoogleRateLimitError: Error calling model 'gemini-3.8-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+  "latency_s": 30.344130648001737,
+  "cost_usd": 0.0,
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ }
+]
