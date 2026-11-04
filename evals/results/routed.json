@@ -1,0 +1,922 @@
+[
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS304-SH-0.1345-48x96",
+     "qty": 2
+    },
+    {
+     "sku": "SS316L-PL-0.1875-60x120",
+     "qty": 2
+    },
+    {
+     "sku": "CS1018-FB-0.750-1.5x144",
+     "qty": 2
+    }
+   ],
+   "total": 2959.49
+  },
+  "error": null,
+  "latency_s": 6.412131496996153,
+  "cost_usd": 0.0002637,
+  "id": "chatty-02",
+  "metrics": {
+   "line_f1": 0.6666666666666666,
+   "sku_acc": 0.6666666666666666,
+   "abstain_correct": null,
+   "price_err": 0.006622538785319654
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 2
+    },
+    {
+     "sku": "SS2205-PL-1.000-60x120",
+     "qty": 2
+    },
+    {
+     "sku": "SS304L-SH-0.1046-48x120",
+     "qty": 2
+    }
+   ],
+   "total": 12813.77
+  },
+  "error": null,
+  "latency_s": 6.692646487004822,
+  "cost_usd": 0.0002953,
+  "id": "chatty-01",
+  "metrics": {
+   "line_f1": 0.8,
+   "sku_acc": 0.6666666666666666,
+   "abstain_correct": null,
+   "price_err": 0.03696703052239494
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 3
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 2.0771016369981226,
+  "cost_usd": 0.0001328,
+  "id": "missing_dims-03",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 3
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 2.364629852003418,
+  "cost_usd": 0.0001373,
+  "id": "missing_dims-04",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 4
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 2.0495670379896183,
+  "cost_usd": 0.0001498,
+  "id": "missing_dims-01",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 4
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 2.682800551003311,
+  "cost_usd": 0.00014519999999999998,
+  "id": "missing_dims-02",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 4
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 3.8030251619929913,
+  "cost_usd": 0.0010537,
+  "id": "out_of_stock-05",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 4
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 4.208359584008576,
+  "cost_usd": 0.0010501,
+  "id": "out_of_stock-04",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "AL6061-PL-0.750-48x120",
+     "qty": 12
+    }
+   ],
+   "total": 5721.31
+  },
+  "error": null,
+  "latency_s": 2.3526641230128007,
+  "cost_usd": 0.000144,
+  "id": "out_of_stock-03",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS316-PL-0.375-48x96",
+     "qty": 19
+    }
+   ],
+   "total": 18238.87
+  },
+  "error": null,
+  "latency_s": 2.592965563002508,
+  "cost_usd": 0.000155,
+  "id": "out_of_stock-02",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS430-SH-0.1046-48x120",
+     "qty": 20
+    }
+   ],
+   "total": 3101.93
+  },
+  "error": null,
+  "latency_s": 2.373598881997168,
+  "cost_usd": 0.00013780000000000002,
+  "id": "out_of_stock-01",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 2
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 2.1689983010001015,
+  "cost_usd": 0.0001564,
+  "id": "ambiguous-06",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 2
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 2.081036079005571,
+  "cost_usd": 0.00015960000000000003,
+  "id": "ambiguous-05",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 2
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 2.030399427007069,
+  "cost_usd": 0.00014410000000000003,
+  "id": "ambiguous-04",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 2
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 2.2565792679961305,
+  "cost_usd": 0.0001621,
+  "id": "ambiguous-03",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 2
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 3.1526114439911908,
+  "cost_usd": 0.0001615,
+  "id": "ambiguous-02",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 2
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 2.4346753360005096,
+  "cost_usd": 0.000159,
+  "id": "ambiguous-01",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": null,
+   "abstain_correct": 1.0,
+   "price_err": null
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS430-SH-0.0359-48x96",
+     "qty": 2
+    }
+   ],
+   "total": 155.62
+  },
+  "error": null,
+  "latency_s": 2.9023343739972916,
+  "cost_usd": 0.0001537,
+  "id": "alias_units-08",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS316-PL-0.250-60x120",
+     "qty": 3
+    }
+   ],
+   "total": 4278.26
+  },
+  "error": null,
+  "latency_s": 2.6661257590021705,
+  "cost_usd": 0.0001614,
+  "id": "alias_units-07",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS316-SH-0.1196-48x96",
+     "qty": 1
+    }
+   ],
+   "total": 466.4
+  },
+  "error": null,
+  "latency_s": 1.8790372030052822,
+  "cost_usd": 0.00011810000000000001,
+  "id": "alias_units-05",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS316-SH-0.1793-60x120",
+     "qty": 3
+    }
+   ],
+   "total": 3151.17
+  },
+  "error": null,
+  "latency_s": 2.7150287230033427,
+  "cost_usd": 0.00016319999999999998,
+  "id": "alias_units-06",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS316-PL-0.250-60x120",
+     "qty": 2
+    }
+   ],
+   "total": 2835.51
+  },
+  "error": null,
+  "latency_s": 3.245073344995035,
+  "cost_usd": 0.00016690000000000002,
+  "id": "alias_units-04",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "AL6061-SH-0.0359-48x120",
+     "qty": 1
+    }
+   ],
+   "total": 42.97
+  },
+  "error": null,
+  "latency_s": 2.8482789030094864,
+  "cost_usd": 0.0001595,
+  "id": "alias_units-03",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS430-SH-0.0598-48x96",
+     "qty": 1
+    }
+   ],
+   "total": 108.8
+  },
+  "error": null,
+  "latency_s": 2.52755324098689,
+  "cost_usd": 0.0001533,
+  "id": "alias_units-02",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS304L-SH-0.1046-48x120",
+     "qty": 3
+    }
+   ],
+   "total": 997.03
+  },
+  "error": null,
+  "latency_s": 3.519059501006268,
+  "cost_usd": 0.000144,
+  "id": "alias_units-01",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS304-PL-0.1875-48x96",
+     "qty": 3
+    }
+   ],
+   "total": 1440.28
+  },
+  "error": null,
+  "latency_s": 2.8418685430078767,
+  "cost_usd": 0.0001453,
+  "id": "clean-14",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "CSA36-PL-0.625-48x120",
+     "qty": 1
+    },
+    {
+     "sku": "SS316-FB-0.375-2x240",
+     "qty": 3
+    },
+    {
+     "sku": "AL5052-PL-0.1875-60x120",
+     "qty": 4
+    }
+   ],
+   "total": 2154.55
+  },
+  "error": null,
+  "latency_s": 4.36305762900156,
+  "cost_usd": 0.000243,
+  "id": "clean-15",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "AL6061-SH-0.1793-60x120",
+     "qty": 3
+    }
+   ],
+   "total": 746.91
+  },
+  "error": null,
+  "latency_s": 2.6858456390036736,
+  "cost_usd": 0.00016130000000000002,
+  "id": "clean-13",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "AL6061-FB-0.250-6x144",
+     "qty": 1
+    }
+   ],
+   "total": 40.69
+  },
+  "error": null,
+  "latency_s": 2.7874548039981164,
+  "cost_usd": 0.0001699,
+  "id": "clean-11",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "AL6061-PL-1.500-48x120",
+     "qty": 3
+    },
+    {
+     "sku": "SS304L-FB-1.000-1x144",
+     "qty": 3
+    },
+    {
+     "sku": "CS1018-RB-1.500-1.5x240",
+     "qty": 4
+    }
+   ],
+   "total": 5562.37
+  },
+  "error": null,
+  "latency_s": 6.129199510993203,
+  "cost_usd": 0.0003165,
+  "id": "clean-12",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS2205-PL-0.250-48x120",
+     "qty": 4
+    }
+   ],
+   "total": 4896.45
+  },
+  "error": null,
+  "latency_s": 2.3692475429998012,
+  "cost_usd": 0.0001466,
+  "id": "clean-10",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "CS4140-FB-0.750-1.5x144",
+     "qty": 2
+    },
+    {
+     "sku": "AL5052-FB-0.250-1.5x240",
+     "qty": 4
+    }
+   ],
+   "total": 184.18
+  },
+  "error": null,
+  "latency_s": 4.117160007997882,
+  "cost_usd": 0.0002453,
+  "id": "clean-09",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 4
+    },
+    {
+     "sku": null,
+     "qty": 1
+    }
+   ],
+   "total": 0.0
+  },
+  "error": null,
+  "latency_s": 3.320731630999944,
+  "cost_usd": 0.00019830000000000002,
+  "id": "clean-08",
+  "metrics": {
+   "line_f1": 0.0,
+   "sku_acc": 0.0,
+   "abstain_correct": null,
+   "price_err": 1.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "CSA572-50-PL-1.250-48x96",
+     "qty": 1
+    },
+    {
+     "sku": "SS304L-SH-0.0747-48x120",
+     "qty": 1
+    }
+   ],
+   "total": 1421.67
+  },
+  "error": null,
+  "latency_s": 3.370224735001102,
+  "cost_usd": 0.00018830000000000002,
+  "id": "clean-06",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "AL5052-RB-0.750-0.75x240",
+     "qty": 3
+    },
+    {
+     "sku": "CS1018-FB-0.750-1.5x144",
+     "qty": 2
+    },
+    {
+     "sku": "SS316-PL-1.250-48x96",
+     "qty": 2
+    }
+   ],
+   "total": 9310.4
+  },
+  "error": null,
+  "latency_s": 5.215782518003834,
+  "cost_usd": 0.0002903,
+  "id": "clean-07",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 2
+    },
+    {
+     "sku": "SS316-PL-0.625-60x120",
+     "qty": 4
+    },
+    {
+     "sku": "CSA36-FB-1.000-1.5x144",
+     "qty": 4
+    }
+   ],
+   "total": 14778.67
+  },
+  "error": null,
+  "latency_s": 4.677183213992976,
+  "cost_usd": 0.00027039999999999996,
+  "id": "clean-05",
+  "metrics": {
+   "line_f1": 0.8,
+   "sku_acc": 0.6666666666666666,
+   "abstain_correct": null,
+   "price_err": 0.007134094643819324
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 4
+    },
+    {
+     "sku": null,
+     "qty": 3
+    },
+    {
+     "sku": "CSA572-50-PL-0.625-60x120",
+     "qty": 3
+    }
+   ],
+   "total": 2603.45
+  },
+  "error": null,
+  "latency_s": 4.288465167002869,
+  "cost_usd": 0.00024040000000000002,
+  "id": "clean-04",
+  "metrics": {
+   "line_f1": 0.5,
+   "sku_acc": 0.3333333333333333,
+   "abstain_correct": null,
+   "price_err": 0.3772067899757911
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "AL6061-FB-0.250-6x144",
+     "qty": 2
+    }
+   ],
+   "total": 113.45
+  },
+  "error": null,
+  "latency_s": 2.644782718998613,
+  "cost_usd": 0.00016960000000000003,
+  "id": "clean-03",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": null,
+     "qty": 1
+    },
+    {
+     "sku": "SS316-SH-0.1793-60x120",
+     "qty": 2
+    },
+    {
+     "sku": null,
+     "qty": 1
+    }
+   ],
+   "total": 2092.94
+  },
+  "error": null,
+  "latency_s": 4.025165960993036,
+  "cost_usd": 0.0002528,
+  "id": "clean-02",
+  "metrics": {
+   "line_f1": 0.5,
+   "sku_acc": 0.3333333333333333,
+   "abstain_correct": null,
+   "price_err": 0.056898626087661816
+  }
+ },
+ {
+  "pred": {
+   "lines": [
+    {
+     "sku": "SS430-SH-0.1196-48x96",
+     "qty": 4
+    },
+    {
+     "sku": "AL6061-PL-1.500-48x120",
+     "qty": 1
+    }
+   ],
+   "total": 2462.67
+  },
+  "error": null,
+  "latency_s": 3.596725208000862,
+  "cost_usd": 0.00018969999999999998,
+  "id": "clean-01",
+  "metrics": {
+   "line_f1": 1.0,
+   "sku_acc": 1.0,
+   "abstain_correct": null,
+   "price_err": 0.0
+  }
+ }
+]

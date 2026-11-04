@@ -1,6 +1,7 @@
 """Graph nodes. Each does one job; the LLM never prices, and every ERP fact comes through MCP tools."""
 import json
 from decimal import Decimal
+from html import escape
 from pathlib import Path
 from typing import Any, Literal, TypedDict
 
@@ -109,6 +110,10 @@ class Agent:
         if model.startswith("claude"):  # 5.x models reject temperature and forced tool use: native structured output
             llm = init_chat_model(model, max_tokens=8000, output_config={"effort": self.s.effort},
                                   api_key=self.s.anthropic_api_key or None)
+            return llm.with_structured_output(schema, method="json_schema")
+        if model.startswith("gpt"):
+            llm = init_chat_model(model, model_provider="openai", max_retries=3, timeout=45,
+                                  reasoning_effort=self.s.effort, api_key=self.s.openai_api_key or None)
             return llm.with_structured_output(schema, method="json_schema")
         llm = init_chat_model(model, model_provider="google_genai", max_retries=3, timeout=45, rate_limiter=_limiter(model),
                               api_key=self.s.google_api_key or self.s.gemini_api_key or None)
@@ -322,11 +327,15 @@ class Agent:
         return {"draft": {"id": oid, "name": name, "url": url}}
 
     def _audit_note(self, q: Quote, cfg: dict) -> str:
-        rows = "".join(
-            f"<li>{pl.line.norm.raw_text} &rarr; <b>{pl.line.candidate.default_code if pl.line.candidate else 'UNRESOLVED'}</b> "
-            f"[{pl.line.status}] " + ", ".join(f"{c.name}={'ok' if c.ok else 'FAIL'}" for c in pl.line.checks) + "</li>"
-            for pl in q.lines)
-        models = {k: cfg.get(k, getattr(self.s, k)) for k in ("model_extract", "model_disambiguate")}
-        trace = f"<p>Trace: {cfg['trace_url']}</p>" if cfg.get("trace_url") else ""
-        return (f"<p><b>Drafted by steelquote agent; approved by a human.</b> Prices are computed by "
-                f"deterministic code, not the model.</p><ul>{rows}</ul><p>Models: {models}</p>{trace}")
+        def row(pl) -> str:
+            r = pl.line
+            sku = r.candidate.default_code if r.candidate else "UNRESOLVED"
+            failed = ", ".join(c.name for c in r.checks if not c.ok)
+            flag = f" &mdash; failed: {escape(failed)}" if failed else ""
+            return f"<li>{escape(r.norm.raw_text)} &rarr; <b>{escape(sku)}</b> [{r.status}]{flag}</li>"
+        models = ", ".join(f"{k.removeprefix('model_')}: {cfg.get(k, getattr(self.s, k))}"
+                           for k in ("model_extract", "model_disambiguate"))
+        trace = f"<p>Trace: {escape(cfg['trace_url'])}</p>" if cfg.get("trace_url") else ""
+        return ("<p><b>Drafted by the steelquote agent; approved by a human.</b> "
+                "Prices are computed by deterministic code, not the model.</p>"
+                f"<ul>{''.join(row(pl) for pl in q.lines)}</ul><p>Models &mdash; {escape(models)}</p>{trace}")

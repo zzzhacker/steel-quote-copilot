@@ -101,7 +101,10 @@ def parse_dims(text: str) -> tuple[float | None, float | None]:
 
 
 def normalize_form(text: str) -> Form | None:
-    return _FORMS.get(re.sub(r"[^a-z]", "", text.lower()))
+    if form := _FORMS.get(re.sub(r"[^a-z]", "", text.lower())):
+        return form
+    # "rd bar", "sht metal": the generic word is noise, so try the remaining words one by one
+    return next((_FORMS[w] for w in re.findall(r"[a-z]+", text.lower()) if w in _FORMS), None)
 
 
 def weight_lb(form: Form, grade: str, thk_in: float, w_in: float, l_in: float, qty: int = 1) -> float:

@@ -41,4 +41,5 @@ class Odoo:
         return self.call(model, "write", ids=ids, vals=vals)
 
     def message_post(self, model: str, record_id: int, body: str) -> Any:
-        return self.call(model, "message_post", ids=[record_id], body=body)
+        """body is HTML. Over JSON-2 a plain str is escaped, and Markup is not sendable, so flag it explicitly."""
+        return self.call(model, "message_post", ids=[record_id], body=body, body_is_html=True)

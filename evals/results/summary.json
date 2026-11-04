@@ -53,5 +53,71 @@
   "price_err": 0.018,
   "cost_per_rfq": 0.00056,
   "p50_latency_s": 15.3
+ },
+ {
+  "config": "luna",
+  "n": 40,
+  "errors": 0,
+  "line_f1": 0.949,
+  "sku_acc": 0.917,
+  "abstain_correct": 1.0,
+  "price_err": 0.039,
+  "cost_per_rfq": 0.00019,
+  "p50_latency_s": 3.0
+ },
+ {
+  "config": "terra",
+  "n": 40,
+  "errors": 0,
+  "line_f1": 0.922,
+  "sku_acc": 0.857,
+  "abstain_correct": 1.0,
+  "price_err": 0.055,
+  "cost_per_rfq": 0.00147,
+  "p50_latency_s": 2.9
+ },
+ {
+  "config": "sol",
+  "n": 40,
+  "errors": 0,
+  "line_f1": 0.992,
+  "sku_acc": 0.988,
+  "abstain_correct": 1.0,
+  "price_err": 0.0,
+  "cost_per_rfq": 0.00274,
+  "p50_latency_s": 2.9
+ },
+ {
+  "config": "routed",
+  "n": 40,
+  "errors": 0,
+  "line_f1": 0.932,
+  "sku_acc": 0.881,
+  "abstain_correct": 1.0,
+  "price_err": 0.053,
+  "cost_per_rfq": 0.00023,
+  "p50_latency_s": 2.8
+ },
+ {
+  "config": "routed_sol",
+  "n": 40,
+  "errors": 0,
+  "line_f1": 0.944,
+  "sku_acc": 0.905,
+  "abstain_correct": 1.0,
+  "price_err": 0.04,
+  "cost_per_rfq": 0.00029,
+  "p50_latency_s": 2.8
+ },
+ {
+  "config": "routed_rev",
+  "n": 40,
+  "errors": 0,
+  "line_f1": 0.992,
+  "sku_acc": 0.988,
+  "abstain_correct": 1.0,
+  "price_err": 0.0,
+  "cost_per_rfq": 0.00266,
+  "p50_latency_s": 3.1
  }
 ]

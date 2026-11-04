@@ -2,7 +2,7 @@
 
     uv run python -m evals.run --all            # every config, results -> evals/results/
     uv run python -m evals.run --config lite --limit 5
-Needs a Gemini key (GOOGLE_API_KEY) and the ER server. With LANGFUSE_* keys set, each config is also a Langfuse
+Needs GOOGLE_API_KEY (Gemini configs), OPENAI_API_KEY (luna/terra/sol/routed) and the ER server. With LANGFUSE_* keys set, each config is also a Langfuse
 experiment run on dataset `rfq-eval-v1` (trace per item, scores per metric).
 """
 import argparse
@@ -22,12 +22,27 @@ from steelquote.agent import runner
 
 DATASET = "rfq-eval-v1"
 RESULTS = Path("evals/results")
-# $/1M tokens in/out at paid list prices. The free tier is what actually runs, so this is the "what it would
-# cost at volume" number that justifies model routing, not real spend.
-PRICES = {"lite": (0.30, 2.50), "flash": (0.75, 3.75)}  # $/1M in/out, list prices (3.8 Flash promo rate to Dec 31 2026)
+# $/1M tokens in/out at list prices. Gemini runs on the free tier, so there this is the "what it would cost at volume"
+# number that justifies model routing, not real spend. OpenAI prices are from third-party trackers, not OpenAI's page.
+PRICES = {"gemini-3.5-flash-lite": (0.30, 2.50), "gemini-3.8-flash": (0.75, 3.75),
+          "gpt-6-luna": (0.10, 0.50), "gpt-6.1-terra": (1.00, 5.00), "gpt-6.1-sol": (2.00, 10.00)}
+ALL_STEPS = ("model_extract", "model_disambiguate")
+
+
+def everywhere(model: str) -> dict:
+    return dict.fromkeys(ALL_STEPS, model)
+
+
 CONFIGS = {
     "lite": {},  # baseline: 3.5 Flash-Lite for every step, hybrid retrieval, validate + retry
-    "flash": {"model_extract": "gemini-3.8-flash", "model_disambiguate": "gemini-3.8-flash"},
+    "flash": everywhere("gemini-3.8-flash"),
+    "luna": everywhere("gpt-6-luna"),
+    "terra": everywhere("gpt-6.1-terra"),
+    "sol": everywhere("gpt-6.1-sol"),
+    # routing: the cheap model reads the email, the stronger one only breaks ties between ERP candidates
+    "routed": {"model_extract": "gpt-6-luna", "model_disambiguate": "gpt-6.1-terra"},
+    "routed_sol": {"model_extract": "gpt-6-luna", "model_disambiguate": "gpt-6.1-sol"},
+    "routed_rev": {"model_extract": "gpt-6.1-sol", "model_disambiguate": "gpt-6-luna"},  # the strong model reads, the cheap one picks
     "ungrounded": {"grounded": False},  # the model writes the SKU itself, no ERP lookup
     "keyword": {"er_mode": "keyword"},
     "vector": {"er_mode": "vector"},
@@ -39,8 +54,8 @@ METRICS = ["line_f1", "sku_acc", "abstain_correct", "price_err"]
 def cost_usd(usage: dict) -> float:
     total = 0.0
     for model, u in usage.items():
-        tier = "lite" if "lite" in model else "flash"
-        total += (u["input_tokens"] * PRICES[tier][0] + u["output_tokens"] * PRICES[tier][1]) / 1e6
+        price_in, price_out = PRICES[model]
+        total += (u["input_tokens"] * price_in + u["output_tokens"] * price_out) / 1e6
     return total
 
 

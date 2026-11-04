@@ -66,7 +66,7 @@ def test_parse_dims(text, expected):
 
 @pytest.mark.parametrize("text, expected", [
     ("plt", "plate"), ("PL", "plate"), ("Sheet", "sheet"), ("sht", "sheet"), ("flat bar", "flat_bar"),
-    ("FB", "flat_bar"), ("rd", "round_bar"), ("rod", "round_bar"), ("coil", None),
+    ("FB", "flat_bar"), ("rd", "round_bar"), ("rod", "round_bar"), ("rd bar", "round_bar"), ("coil", None),
 ])
 def test_normalize_form(text, expected):
     assert normalize_form(text) == expected

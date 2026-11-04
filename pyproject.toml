@@ -21,8 +21,9 @@ dependencies = [
   "langchain-mcp-adapters>=0.1",
   "mcp>=1.2",
   "langfuse>=3",
-  "streamlit>=1.40",
   "langchain-google-genai>=4.4.2",
+  "langchain-openai>=1.7.3",
+  "fastapi>=0.162.0",
 ]
 
 [dependency-groups]
