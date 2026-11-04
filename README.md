@@ -14,11 +14,27 @@ Built as a one-day prototype on synthetic inventory and public specs. The surcha
 | Turn a chat edit ("make line 2 3/16") into a patch | Weight, surcharge, cuts, certs, tier discounts, totals |
 
 ## Architecture
-```
-Streamlit chat ─► LangGraph agent ─► MCP client ─► ER MCP server ─► Odoo 19 (JSON-2 API)
-                    │                                  └─► pgvector (hybrid retrieval index)
-                    ├─ extract → normalize → resolve → validate → price → [human approves] → write draft
-                    └─ Langfuse (trace per run; dataset + experiment runs for evals)
+```mermaid
+flowchart TB
+    UI["Streamlit chat UI"] <--> Agent
+    Evals["Eval harness"] --> Agent
+    subgraph Agent["LangGraph agent"]
+        direction LR
+        extract --> normalize --> resolve --> validate --> price --> review{{"human review<br/>interrupt()"}}
+        review -- approve --> draft["write draft"]
+        review -- chat edit --> revise --> normalize
+    end
+    Agent -. traces .-> LF["Langfuse"]
+    Agent --> LLM["Chat model<br/>Gemini / Claude"]
+    Agent -. imports .-> Domain["domain/<br/>ontology, pricing"]
+    Agent -- "MCP (streamable HTTP)" --> ER
+    subgraph ER["ER MCP server"]
+        direction LR
+        ri["resolve_item"] ~~~ rc["resolve_customer"] ~~~ fs["find_stock"] ~~~ ve["validate_entities"]
+    end
+    ER -- "live state" --> Odoo[("Odoo 19<br/>JSON-2 API")]
+    ER -- "BM25 + vector, RRF" --> PG[("Postgres + pgvector")]
+    draft -- "approved draft quote" --> Odoo
 ```
 - **ER MCP server** (`er_server/`): `resolve_item`, `resolve_customer`, `find_stock` (remnant-first, live), `validate_entities` (live, catches stale/hallucinated IDs). The same grounding pattern I run in production at Blue Yonder, rebuilt for steel.
 - **Agent** (`agent/`): LangGraph with a human-review `interrupt()`. Edits re-run only the changed lines. A line that fails validation gets one retry with relaxed search, then asks for clarification.
